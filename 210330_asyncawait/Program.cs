@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _210330_asyncawait
+namespace Sync_Ansync
 {
     static class Program
     {

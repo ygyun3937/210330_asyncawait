@@ -1,4 +1,4 @@
-﻿namespace _210330_asyncawait
+﻿namespace Sync_Ansync
 {
     partial class Form1
     {
@@ -75,7 +75,7 @@
             // 
             // pRobot
             // 
-            this.pRobot.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pRobot.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pRobot.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pRobot.Location = new System.Drawing.Point(53, 3);
             this.pRobot.Name = "pRobot";
@@ -84,7 +84,7 @@
             // 
             // pDoor1
             // 
-            this.pDoor1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pDoor1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pDoor1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pDoor1.Location = new System.Drawing.Point(3, 3);
             this.pDoor1.Name = "pDoor1";
@@ -93,7 +93,7 @@
             // 
             // pDoor2
             // 
-            this.pDoor2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pDoor2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pDoor2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pDoor2.Location = new System.Drawing.Point(217, 3);
             this.pDoor2.Name = "pDoor2";
@@ -118,6 +118,7 @@
             this.btnInit.TabIndex = 2;
             this.btnInit.Text = "초기 화면 표시";
             this.btnInit.UseVisualStyleBackColor = true;
+            this.btnInit.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnSimulation
             // 
@@ -127,6 +128,7 @@
             this.btnSimulation.TabIndex = 3;
             this.btnSimulation.Text = "동기 동작 진행";
             this.btnSimulation.UseVisualStyleBackColor = true;
+            this.btnSimulation.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnSimulationAsync
             // 
@@ -136,6 +138,7 @@
             this.btnSimulationAsync.TabIndex = 4;
             this.btnSimulationAsync.Text = "비동기 동작 진행";
             this.btnSimulationAsync.UseVisualStyleBackColor = true;
+            this.btnSimulationAsync.Click += new System.EventHandler(this.btn_Click);
             // 
             // label1
             // 
@@ -185,6 +188,7 @@
             this.btnD1Open.TabIndex = 9;
             this.btnD1Open.Text = "Door Open";
             this.btnD1Open.UseVisualStyleBackColor = true;
+            this.btnD1Open.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnD1Close
             // 
@@ -194,6 +198,7 @@
             this.btnD1Close.TabIndex = 10;
             this.btnD1Close.Text = "Door Close";
             this.btnD1Close.UseVisualStyleBackColor = true;
+            this.btnD1Close.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnD2Open
             // 
@@ -203,6 +208,7 @@
             this.btnD2Open.TabIndex = 11;
             this.btnD2Open.Text = "Door2 Open";
             this.btnD2Open.UseVisualStyleBackColor = true;
+            this.btnD2Open.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnD2Close
             // 
@@ -212,6 +218,7 @@
             this.btnD2Close.TabIndex = 11;
             this.btnD2Close.Text = "Door2 Close";
             this.btnD2Close.UseVisualStyleBackColor = true;
+            this.btnD2Close.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnRobotExtend
             // 
@@ -221,6 +228,7 @@
             this.btnRobotExtend.TabIndex = 10;
             this.btnRobotExtend.Text = "Robot Arm Extend";
             this.btnRobotExtend.UseVisualStyleBackColor = true;
+            this.btnRobotExtend.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnRobotRetract
             // 
@@ -230,6 +238,7 @@
             this.btnRobotRetract.TabIndex = 10;
             this.btnRobotRetract.Text = "Robot Arm Retract";
             this.btnRobotRetract.UseVisualStyleBackColor = true;
+            this.btnRobotRetract.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnRobotRotate
             // 
@@ -239,6 +248,7 @@
             this.btnRobotRotate.TabIndex = 10;
             this.btnRobotRotate.Text = "Robot Rotate";
             this.btnRobotRotate.UseVisualStyleBackColor = true;
+            this.btnRobotRotate.Click += new System.EventHandler(this.btn_Click);
             // 
             // groupBox3
             // 
@@ -258,12 +268,14 @@
             // 
             // lboxLog
             // 
+            this.lboxLog.FullRowSelect = true;
             this.lboxLog.HideSelection = false;
             this.lboxLog.Location = new System.Drawing.Point(7, 18);
             this.lboxLog.Name = "lboxLog";
             this.lboxLog.Size = new System.Drawing.Size(754, 288);
             this.lboxLog.TabIndex = 13;
             this.lboxLog.UseCompatibleStateImageBehavior = false;
+            this.lboxLog.View = System.Windows.Forms.View.List;
             // 
             // groupBox4
             // 
