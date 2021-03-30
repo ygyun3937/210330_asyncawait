@@ -61,16 +61,16 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel1.Controls.Add(this.pRobot, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.pDoor1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.pDoor2, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(18, 14);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 14);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(264, 186);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(300, 186);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pRobot
@@ -79,7 +79,7 @@
             this.pRobot.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pRobot.Location = new System.Drawing.Point(53, 3);
             this.pRobot.Name = "pRobot";
-            this.pRobot.Size = new System.Drawing.Size(158, 180);
+            this.pRobot.Size = new System.Drawing.Size(194, 180);
             this.pRobot.TabIndex = 0;
             // 
             // pDoor1
@@ -95,7 +95,7 @@
             // 
             this.pDoor2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pDoor2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pDoor2.Location = new System.Drawing.Point(217, 3);
+            this.pDoor2.Location = new System.Drawing.Point(253, 3);
             this.pDoor2.Name = "pDoor2";
             this.pDoor2.Size = new System.Drawing.Size(44, 180);
             this.pDoor2.TabIndex = 2;
@@ -105,7 +105,7 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(296, 212);
+            this.groupBox1.Size = new System.Drawing.Size(315, 212);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Display";
@@ -173,7 +173,7 @@
             this.groupBox2.Controls.Add(this.btnSimulationAsync);
             this.groupBox2.Controls.Add(this.btnSimulation);
             this.groupBox2.Controls.Add(this.btnInit);
-            this.groupBox2.Location = new System.Drawing.Point(320, 12);
+            this.groupBox2.Location = new System.Drawing.Point(333, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(196, 211);
             this.groupBox2.TabIndex = 8;
@@ -259,7 +259,7 @@
             this.groupBox3.Controls.Add(this.btnRobotExtend);
             this.groupBox3.Controls.Add(this.btnD1Close);
             this.groupBox3.Controls.Add(this.btnD1Open);
-            this.groupBox3.Location = new System.Drawing.Point(530, 12);
+            this.groupBox3.Location = new System.Drawing.Point(535, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(251, 211);
             this.groupBox3.TabIndex = 12;
@@ -272,7 +272,7 @@
             this.lboxLog.HideSelection = false;
             this.lboxLog.Location = new System.Drawing.Point(7, 18);
             this.lboxLog.Name = "lboxLog";
-            this.lboxLog.Size = new System.Drawing.Size(754, 288);
+            this.lboxLog.Size = new System.Drawing.Size(761, 288);
             this.lboxLog.TabIndex = 13;
             this.lboxLog.UseCompatibleStateImageBehavior = false;
             this.lboxLog.View = System.Windows.Forms.View.List;
@@ -280,9 +280,9 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.lboxLog);
-            this.groupBox4.Location = new System.Drawing.Point(11, 230);
+            this.groupBox4.Location = new System.Drawing.Point(12, 230);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(769, 316);
+            this.groupBox4.Size = new System.Drawing.Size(774, 316);
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Log View";
@@ -291,7 +291,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 550);
+            this.ClientSize = new System.Drawing.Size(798, 550);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
